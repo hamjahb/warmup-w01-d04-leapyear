@@ -17,3 +17,12 @@ console.log(isLeapYear(1990))
 console.log(isLeapYear(1996))
 console.log(isLeapYear2(1997))
 console.log(isLeapYear2(2000))
+
+// my solution
+const isLeapYear3 = function(year = prompt("what year would you like to try?")){
+    if ((year % 4 == 0) && (year % 100 != 0)|| (year % 400 == 0) ){
+        return true;
+    } else {
+        return false;
+    }
+}
